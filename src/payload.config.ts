@@ -11,13 +11,14 @@ import Article from './collections/Articles'
 import Category from './collections/Categories'
 import Comment from './collections/Comments'
 import Media from './collections/Medias'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
 
 export default buildConfig({
   admin: {
     user: Users.slug,
     bundler: webpackBundler(),
   },
-  editor: slateEditor({}),
+  editor: lexicalEditor({}),
   collections: [Users, Article, Category, Comment, Media],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
