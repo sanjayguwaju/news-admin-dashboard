@@ -4,6 +4,10 @@ import { CollectionConfig } from 'payload/types';
 const User: CollectionConfig = {
   slug: 'users',
   auth: true,
+  access: {
+    create: () => true,
+    read: () => true,
+  },
   fields: [
     {
       name: 'username',

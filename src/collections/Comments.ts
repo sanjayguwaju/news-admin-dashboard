@@ -3,6 +3,10 @@ import { CollectionConfig } from 'payload/types';
 
 const Comment: CollectionConfig = {
   slug: 'comments',
+  access: {
+    create: () => true,
+    read: () => true,
+  },
   fields: [
     {
       name: 'content',

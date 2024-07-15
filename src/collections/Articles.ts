@@ -3,6 +3,10 @@ import { CollectionConfig } from 'payload/types';
 
 const Article: CollectionConfig = {
   slug: 'articles',
+  access: {
+    create: () => true,
+    read: () => true,
+  },
   fields: [
     {
       name: 'title',
