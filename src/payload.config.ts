@@ -12,6 +12,9 @@ import Comment from './collections/Comments'
 import Media from './collections/Media'
 import Pages from './collections/Pages'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import { Settings } from './globals/Settings'
+import { Header } from './globals/Header'
+import Footer from './globals/Footer'
 
 export default buildConfig({
   admin: {
@@ -27,6 +30,7 @@ export default buildConfig({
     Comment,
     Media
   ],
+  globals: [Settings, Header, Footer],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
   },
