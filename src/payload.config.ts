@@ -3,14 +3,14 @@ import path from 'path'
 import { payloadCloud } from '@payloadcms/plugin-cloud'
 import { mongooseAdapter } from '@payloadcms/db-mongodb'
 import { webpackBundler } from '@payloadcms/bundler-webpack'
-import { slateEditor } from '@payloadcms/richtext-slate'
 import { buildConfig } from 'payload/config'
 
 import Users from './collections/Users'
 import Article from './collections/Articles'
 import Category from './collections/Categories'
 import Comment from './collections/Comments'
-import Media from './collections/Medias'
+import Media from './collections/Media'
+import Pages from './collections/Pages'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 
 export default buildConfig({
@@ -18,8 +18,15 @@ export default buildConfig({
     user: Users.slug,
     bundler: webpackBundler(),
   },
-  editor: lexicalEditor({}),
-  collections: [Users, Article, Category, Comment, Media],
+  editor: lexicalEditor(),
+  collections: [
+    Users, 
+    Pages, 
+    Article, 
+    Category, 
+    Comment,
+    Media
+  ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
   },

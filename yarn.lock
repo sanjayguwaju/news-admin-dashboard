@@ -1568,10 +1568,10 @@
     amazon-cognito-identity-js "^6.1.2"
     nodemailer "6.9.8"
 
-"@payloadcms/richtext-lexical@^0.11.1":
-  version "0.11.1"
-  resolved "https://registry.npmjs.org/@payloadcms/richtext-lexical/-/richtext-lexical-0.11.1.tgz"
-  integrity sha512-m1w13gwm62aPVhtZ1DYIBOZXBCe+6Xeh18fzMjLZUecZn/mCyLKHQPFQZ5BvqprC4Zg7u54pPBXdfbjCxnSQUg==
+"@payloadcms/richtext-lexical@^0.11.2":
+  version "0.11.2"
+  resolved "https://registry.npmjs.org/@payloadcms/richtext-lexical/-/richtext-lexical-0.11.2.tgz"
+  integrity sha512-/1tRIrHKpfebnvKXUK6eQja2VmwNWbbd4LzIyXpg3LqzwXGg6sgWpAfL2x6qRVDQaLT0EHzjI13dg66eAKH4Zw==
   dependencies:
     "@faceless-ui/modal" "2.0.1"
     "@lexical/headless" "0.13.1"
@@ -2109,39 +2109,39 @@
   resolved "https://registry.npmjs.org/@swc/core-linux-x64-gnu/-/core-linux-x64-gnu-1.3.107.tgz"
   integrity sha512-uBVNhIg0ip8rH9OnOsCARUFZ3Mq3tbPHxtmWk9uAa5u8jQwGWeBx5+nTHpDOVd3YxKb6+5xDEI/edeeLpha/9g==
 
-"@swc/core-linux-x64-gnu@1.6.13":
-  version "1.6.13"
-  resolved "https://registry.npmjs.org/@swc/core-linux-x64-gnu/-/core-linux-x64-gnu-1.6.13.tgz"
-  integrity sha512-PkR4CZYJNk5hcd2+tMWBpnisnmYsUzazI1O5X7VkIGFcGePTqJ/bWlfUIVVExWxvAI33PQFzLbzmN5scyIUyGQ==
+"@swc/core-linux-x64-gnu@1.7.0":
+  version "1.7.0"
+  resolved "https://registry.npmjs.org/@swc/core-linux-x64-gnu/-/core-linux-x64-gnu-1.7.0.tgz"
+  integrity sha512-SY3HA0K0Dpqt1HIfMLGpwL4hd4UaL2xHP5oZXPlRQPhUDZrbb4PbI3ZJnh66c63eL4ZR8EJ+HRFI0Alx5p69Zw==
 
 "@swc/core-linux-x64-musl@1.3.107":
   version "1.3.107"
   resolved "https://registry.npmjs.org/@swc/core-linux-x64-musl/-/core-linux-x64-musl-1.3.107.tgz"
   integrity sha512-mvACkUvzSIB12q1H5JtabWATbk3AG+pQgXEN95AmEX2ZA5gbP9+B+mijsg7Sd/3tboHr7ZHLz/q3SHTvdFJrEw==
 
-"@swc/core-linux-x64-musl@1.6.13":
-  version "1.6.13"
-  resolved "https://registry.npmjs.org/@swc/core-linux-x64-musl/-/core-linux-x64-musl-1.6.13.tgz"
-  integrity sha512-OdsY7wryTxCKwGQcwW9jwWg3cxaHBkTTHi91+5nm7hFPpmZMz1HivJrWAMwVE7iXFw+M4l6ugB/wCvpYrUAAjA==
+"@swc/core-linux-x64-musl@1.7.0":
+  version "1.7.0"
+  resolved "https://registry.npmjs.org/@swc/core-linux-x64-musl/-/core-linux-x64-musl-1.7.0.tgz"
+  integrity sha512-cEJ2ebtV1v/5Ilb55E05J6F5SrHKQWzUttIhR5Mkayyo+yvPslcpByuFC3D+J7X1ebziTOBpWuMpUdjLfh3SMQ==
 
 "@swc/core@^1.0.0", "@swc/core@^1.0.46", "@swc/core@^1.2.147", "@swc/core@>=1.2.50":
-  version "1.6.13"
-  resolved "https://registry.npmjs.org/@swc/core/-/core-1.6.13.tgz"
-  integrity sha512-eailUYex6fkfaQTev4Oa3mwn0/e3mQU4H8y1WPuImYQESOQDtVrowwUGDSc19evpBbHpKtwM+hw8nLlhIsF+Tw==
+  version "1.7.0"
+  resolved "https://registry.npmjs.org/@swc/core/-/core-1.7.0.tgz"
+  integrity sha512-d4vMzH6ICllDwlPuhset2h8gu/USHdbyfJim+2hQEdxC0UONtfpmu38XBgNqRjStrji1Q5M10jfeUZL3cu1i8g==
   dependencies:
     "@swc/counter" "^0.1.3"
     "@swc/types" "^0.1.9"
   optionalDependencies:
-    "@swc/core-darwin-arm64" "1.6.13"
-    "@swc/core-darwin-x64" "1.6.13"
-    "@swc/core-linux-arm-gnueabihf" "1.6.13"
-    "@swc/core-linux-arm64-gnu" "1.6.13"
-    "@swc/core-linux-arm64-musl" "1.6.13"
-    "@swc/core-linux-x64-gnu" "1.6.13"
-    "@swc/core-linux-x64-musl" "1.6.13"
-    "@swc/core-win32-arm64-msvc" "1.6.13"
-    "@swc/core-win32-ia32-msvc" "1.6.13"
-    "@swc/core-win32-x64-msvc" "1.6.13"
+    "@swc/core-darwin-arm64" "1.7.0"
+    "@swc/core-darwin-x64" "1.7.0"
+    "@swc/core-linux-arm-gnueabihf" "1.7.0"
+    "@swc/core-linux-arm64-gnu" "1.7.0"
+    "@swc/core-linux-arm64-musl" "1.7.0"
+    "@swc/core-linux-x64-gnu" "1.7.0"
+    "@swc/core-linux-x64-musl" "1.7.0"
+    "@swc/core-win32-arm64-msvc" "1.7.0"
+    "@swc/core-win32-ia32-msvc" "1.7.0"
+    "@swc/core-win32-x64-msvc" "1.7.0"
 
 "@swc/core@1.3.107":
   version "1.3.107"
@@ -7440,6 +7440,11 @@ slate@>=0.65.3, slate@0.91.4:
     immer "^9.0.6"
     is-plain-object "^5.0.0"
     tiny-warning "^1.0.3"
+
+slugify@^1.6.6:
+  version "1.6.6"
+  resolved "https://registry.npmjs.org/slugify/-/slugify-1.6.6.tgz"
+  integrity sha512-h+z7HKHYXj6wJU+AnS/+IH8Uh9fdcX1Lrhg1/VMdf9PwoBQXFcXiAdsy2tSK0P6gKwJLXp02r90ahUCqHk9rrw==
 
 smart-buffer@^4.2.0:
   version "4.2.0"

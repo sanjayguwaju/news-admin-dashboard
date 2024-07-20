@@ -1,5 +1,7 @@
 // collections/Article.ts
 import { CollectionConfig } from 'payload/types';
+import generateSlug from '../utilities/generateSlug';
+import SectionBlock from '../blocks/SectionBlock';
 
 const Article: CollectionConfig = {
   slug: 'articles',
@@ -14,9 +16,17 @@ const Article: CollectionConfig = {
       required: true,
     },
     {
-      name: 'content',
-      type: 'richText',
+      name: 'slug',
+      type:  'text',
       required: true,
+      unique: true
+    },
+    {
+      name: 'content',
+      type: 'blocks',
+      blocks: [
+      SectionBlock
+      ],
     },
     {
       name: 'author',
@@ -65,6 +75,15 @@ const Article: CollectionConfig = {
       ],
     },
   ],
+  hooks: {
+    beforeValidate: [
+      ({ data }) => {
+        if (data.title && !data.slug) {
+          data.slug = generateSlug(data.title);
+        }
+      },
+    ],
+  },
 };
 
 export default Article;
