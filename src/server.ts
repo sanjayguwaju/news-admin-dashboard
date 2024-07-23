@@ -1,5 +1,6 @@
 import dotenv from 'dotenv'
 import path from 'path'
+import cors from 'cors'
 
 // This file is used to replace `server.ts` when ejecting i.e. `yarn eject`
 // See `../eject.ts` for exact details on how this file is used
@@ -14,6 +15,15 @@ import payload from 'payload'
 
 const app = express()
 const PORT = process.env.PORT || 3000
+
+const corsOptions = {
+  origin: '*', // Allow all origins. You can specify specific origins here.
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
+}
+
+app.use(cors(corsOptions))
 
 // Redirect root to the admin panel
 app.get('/', (_, res) => {

@@ -21,6 +21,7 @@ import { Footer } from './globals/Footer'
 import { Header } from './globals/Header'
 import { Settings } from './globals/Settings'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import SinglePost from './collections/SinglePost'
 
 const generateTitle: GenerateTitle = () => {
   return 'My Website'
@@ -54,7 +55,7 @@ export default buildConfig({
     url: process.env.DATABASE_URI,
   }),
   serverURL: process.env.PAYLOAD_PUBLIC_SERVER_URL,
-  collections: [Pages, Posts, Media, Categories, Users, Comments],
+  collections: [Pages, Posts, Media, Categories, Users, Comments, SinglePost],
   globals: [Settings, Header, Footer],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
