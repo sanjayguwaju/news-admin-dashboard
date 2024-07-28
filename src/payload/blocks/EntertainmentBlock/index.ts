@@ -10,7 +10,7 @@ export const EntertainmentBlock: Block = {
   fields: [
     {
       type: 'relationship',
-      name: 'entertainmentPosts',
+      name: 'blockPosts',
       label: 'Select Entertainment Posts',
       relationTo: 'single-post',
       hasMany: true,

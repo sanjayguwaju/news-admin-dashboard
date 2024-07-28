@@ -10,7 +10,7 @@ export const SocialBlock: Block = {
   fields: [
     {
       type: 'relationship',
-      name: 'socialPosts',
+      name: 'blockPosts',
       label: 'Select Social Posts',
       relationTo: 'single-post',
       hasMany: true,

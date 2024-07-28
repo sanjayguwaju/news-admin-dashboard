@@ -10,7 +10,7 @@ export const RecentBlock: Block = {
   fields: [
     {
       type: 'relationship',
-      name: 'recentPosts',
+      name: 'blockPosts',
       label: 'Select Recent Posts',
       relationTo: 'single-post',
       hasMany: true,

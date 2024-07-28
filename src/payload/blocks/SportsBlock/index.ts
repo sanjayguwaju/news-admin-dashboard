@@ -10,7 +10,7 @@ export const SportsBlock: Block = {
   fields: [
     {
       type: 'relationship',
-      name: 'sportPosts',
+      name: 'blockPosts',
       label: 'Select Sport Posts',
       relationTo: 'single-post',
       hasMany: true,

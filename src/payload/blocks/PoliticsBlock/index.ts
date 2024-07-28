@@ -10,7 +10,7 @@ export const PoliticsBlock: Block = {
   fields: [
     {
       type: 'relationship',
-      name: 'politicPosts',
+      name: 'blockPosts',
       label: 'Select Politic Posts',
       relationTo: 'single-post',
       hasMany: true,

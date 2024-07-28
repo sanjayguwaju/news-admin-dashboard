@@ -10,7 +10,7 @@ export const TechnologyBlock: Block = {
   fields: [
     {
       type: 'relationship',
-      name: 'technologyPosts',
+      name: 'blockPosts',
       label: 'Select Technology Posts',
       relationTo: 'single-post',
       hasMany: true,

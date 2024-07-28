@@ -10,7 +10,7 @@ export const HeroBlock: Block = {
   fields: [
     {
       type: 'relationship',
-      name: 'heroPosts',
+      name: 'blockPosts',
       label: 'Select Hero Posts',
       relationTo: 'single-post',
       hasMany: true,
